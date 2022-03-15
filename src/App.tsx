@@ -1,25 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Center, Box } from "@chakra-ui/react";
+import {JobsComponent as Component} from './examples/hooks-state-effects';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box p={16} bg={"grey"} h={"100vh"}>
+      <Center bg={"white"} borderRadius={16} p={16}>
+        <Component />
+      </Center>
+    </Box>
   );
 }
 
